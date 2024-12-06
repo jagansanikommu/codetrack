@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeTrack - Student Progress Tracking System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-blue-600 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold">CodeTrack</h1>
+            <p class="text-sm">Automated CodeChef Progress Tracking System</p>
+        </div>
+    </nav>
+
+    <!-- Table of Contents -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">Table of Contents</h2>
+            <ul class="space-y-2">
+                <li><a href="#overview" class="text-blue-600 hover:underline">Project Overview</a></li>
+                <li><a href="#features" class="text-blue-600 hover:underline">Features & Implementation</a></li>
+                <li><a href="#technical" class="text-blue-600 hover:underline">Technical Architecture</a></li>
+                <li><a href="#code-structure" class="text-blue-600 hover:underline">Code Structure</a></li>
+                <li><a href="#setup" class="text-blue-600 hover:underline">Setup Instructions</a></li>
+                <li><a href="#impact" class="text-blue-600 hover:underline">Project Impact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Project Overview Section -->
+        <section id="overview" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Project Overview</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <p class="mb-4">CodeTrack is an innovative web application designed to automate the tracking of students' programming progress on CodeChef. Built with Flask and modern web technologies, it provides educators with a robust platform to monitor multiple classes and track individual student progress through automated web scraping.</p>
+                
+                <h3 class="text-xl font-semibold mb-2">Project Goals</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li class="mb-2">Automate the process of tracking student progress in competitive programming</li>
+                    <li class="mb-2">Provide real-time insights into student performance</li>
+                    <li class="mb-2">Enable efficient management of multiple classes</li>
+                    <li class="mb-2">Reduce manual effort in progress tracking</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Features & Implementation</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Core Features</h3>
+                        <ul class="list-disc pl-6">
+                            <li class="mb-2">Automated Web Scraping
+                                <ul class="list-circle pl-6 text-sm text-gray-600">
+                                    <li>Intelligent rate limiting</li>
+                                    <li>Error handling and retry mechanisms</li>
+                                    <li>Session management for efficient connections</li>
+                                </ul>
+                            </li>
+                            <li class="mb-2">Multiple Class Management
+                                <ul class="list-circle pl-6 text-sm text-gray-600">
+                                    <li>Support for multiple class sections</li>
+                                    <li>Individual class dashboards</li>
+                                    <li>Bulk updates for entire classes</li>
+                                </ul>
+                            </li>
+                            <li class="mb-2">Progress Tracking
+                                <ul class="list-circle pl-6 text-sm text-gray-600">
+                                    <li>Weekly progress comparison</li>
+                                    <li>Problem solving metrics</li>
+                                    <li>Performance trending</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Implementation Details</h3>
+                        <ul class="list-disc pl-6">
+                            <li class="mb-2">Database Schema
+                                <ul class="list-circle pl-6 text-sm text-gray-600">
+                                    <li>Dynamic table creation for classes</li>
+                                    <li>Efficient data storage and retrieval</li>
+                                    <li>Student progress history</li>
+                                </ul>
+                            </li>
+                            <li class="mb-2">Web Interface
+                                <ul class="list-circle pl-6 text-sm text-gray-600">
+                                    <li>Responsive design</li>
+                                    <li>Interactive dashboards</li>
+                                    <li>Real-time updates</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Architecture -->
+        <section id="technical" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Technical Architecture</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Backend Components</h3>
+                        <ul class="list-disc pl-6">
+                            <li class="mb-2">Flask Web Framework
+                                <ul class="list-circle pl-6 text-sm text-gray-600">
+                                    <li>Route handling</li>
+                                    <li>Request processing</li>
+                                    <li>Template rendering</li>
+                                </ul>
+                            </li>
+                            <li class="mb-2">SQLite Database
+                                <ul class="list-circle pl-6 text-sm text-gray-600">
+                                    <li>Dynamic table creation</li>
+                                    <li>Efficient queries</li>
+                                    <li>Data persistence</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Frontend Components</h3>
+                        <ul class="list-disc pl-6">
+                            <li class="mb-2">Bootstrap UI Framework
+                                <ul class="list-circle pl-6 text-sm text-gray-600">
+                                    <li>Responsive design</li>
+                                    <li>Modern UI components</li>
+                                    <li>Cross-browser compatibility</li>
+                                </ul>
+                            </li>
+                            <li class="mb-2">Jinja2 Templates
+                                <ul class="list-circle pl-6 text-sm text-gray-600">
+                                    <li>Dynamic content rendering</li>
+                                    <li>Template inheritance</li>
+                                    <li>Data presentation</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Structure -->
+        <section id="code-structure" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Code Structure</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-xl font-semibold mb-2">Project Files</h3>
+                <div class="bg-gray-800 text-white p-4 rounded-lg mb-4">
+                    <pre class="whitespace-pre-wrap">
+codetrack/
+├── app.py              # Main Flask application
+├── scraper.py         # CodeChef scraping functionality
+├── students.db        # SQLite database
+├── templates/
+│   ├── index.html    # Homepage template
+│   └── scores.html   # Score display template
+└── requirements.txt   # Project dependencies</pre>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mt-4">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-2">app.py</h4>
+                        <ul class="list-disc pl-6 text-sm">
+                            <li>Flask application setup</li>
+                            <li>Route definitions</li>
+                            <li>Database initialization</li>
+                            <li>Request handling</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-2">scraper.py</h4>
+                        <ul class="list-disc pl-6 text-sm">
+                            <li>Web scraping functions</li>
+                            <li>Rate limiting implementation</li>
+                            <li>Error handling</li>
+                            <li>Data extraction logic</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Setup Instructions -->
+        <section id="setup" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Setup Instructions</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Prerequisites</h3>
+                    <ul class="list-disc pl-6">
+                        <li class="mb-2">Python 3.7 or higher</li>
+                        <li class="mb-2">pip package manager</li>
+                        <li class="mb-2">Git (for cloning the repository)</li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Installation Steps</h3>
+                    <div class="bg-gray-800 text-white p-4 rounded-lg">
+                        <pre class="whitespace-pre-wrap">
+# Clone the repository
+git clone https://github.com/yourusername/codetrack.git
+cd codetrack
+
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Initialize database and run the application
+python app.py</pre>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Dependencies</h3>
+                    <ul class="list-disc pl-6">
+                        <li class="mb-2">Flask - Web framework</li>
+                        <li class="mb-2">BeautifulSoup4 - Web scraping</li>
+                        <li class="mb-2">Requests - HTTP client</li>
+                        <li class="mb-2">Pandas - Data processing</li>
+                        <li class="mb-2">SQLite3 - Database</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Impact -->
+        <section id="impact" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Project Impact</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-xl font-semibold mb-2">Key Takeaways</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-2">Educational Benefits</h4>
+                        <ul class="list-disc pl-6">
+                            <li class="mb-2">Automated progress monitoring saves teacher time</li>
+                            <li class="mb-2">Early identification of struggling students</li>
+                            <li class="mb-2">Data-driven teaching interventions</li>
+                            <li class="mb-2">Improved student engagement tracking</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-2">Technical Achievements</h4>
+                        <ul class="list-disc pl-6">
+                            <li class="mb-2">Robust web scraping implementation</li>
+                            <li class="mb-2">Scalable database design</li>
+                            <li class="mb-2">User-friendly interface</li>
+                            <li class="mb-2">Efficient data processing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>CodeTrack - Student Progress Tracking System</p>
+            <p class="text-sm mt-2">Licensed under MIT License</p>
+            <div class="mt-4">
+                <a href="https://github.com/yourusername/codetrack" class="text-blue-400 hover:underline">GitHub Repository</a>
+                |
+                <a href="https://github.com/yourusername/codetrack/blob/main/README.md" class="text-blue-400 hover:underline">Documentation</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
